@@ -11,6 +11,8 @@ from google.oauth2 import service_account
 import time
 
 start_time = time.time()
+# dosyanızı google docsa yükledikten sonra googlesheetapi ı aktif hale getirmeniz gerekmektedir.
+# işlem sonucunda elde edeceğiniz projenizin anahtar dosyasının ismini keys.json olarak değiştirip bu klasörün içine koymalısınız.
 SERVICE_ACCOUNT_FILE='keys.json'
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
@@ -18,7 +20,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 creds=None
 creds=service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 
-
+#dosyanızı google docsa yükledikten sonra dosyanızın {spreadsheetId} kısmını SAMPLE_SPREADSHEET_ID ile değiştiriniz.
 SAMPLE_SPREADSHEET_ID='1LxBkdpHMNjjAT0pam3ImtpI8AaBGlhzQy1F15dHZy6c'
 
 service = build('sheets', 'v4',credentials=creds)
