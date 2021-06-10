@@ -1,5 +1,5 @@
 
-# Bu sayfa sadece google seeht api üzerinden veri çekme ve update üzerinedir. Ana proje analytica.py dosyasıdır.
+# Bu sayfa sadece google sheet api üzerinden veri çekme ve update üzerinedir. Ana proje analytica.py dosyasıdır.
 
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
