@@ -1,3 +1,8 @@
+# Bu proje, web scarping ile veri çekme üzerinedir.
+# Verilen url ekleri içeren dosya ile bir tarama yapılmakta ve alınan veriler ile google sheet api ile dosyamızın güncellenmesi hedef alınmıştır.
+# 1000 satır url için 1329 saniye harcanmıştır.
+
+
 import requests
 import numpy as np
 from bs4 import BeautifulSoup
