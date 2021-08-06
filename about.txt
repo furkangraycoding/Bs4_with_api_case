@@ -1,0 +1,5 @@
+Bs4 kütüphanesi kullanarak çekilen verilerdeki linklerin ziyaret edilerek 
+web scraping yötyemiyle sayfadaki bilgilerin Google sheet api ile güncellenmesi 
+ve hangi linklerin ürüne ait olduğunun saptanması üzerine bir proje.
+
+1000 link için 1329 saniye harcanmıştır.
